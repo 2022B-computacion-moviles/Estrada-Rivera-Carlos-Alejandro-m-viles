@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "628678014277",
+    "project_id": "movcomp-caer",
+    "storage_bucket": "movcomp-caer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628678014277:android:fe6c279f5da6062caffa2c",
+        "android_client_info": {
+          "package_name": "com.example.movilescomputacionce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628678014277-la574gnadir2mvcj78un2vn36hp5v87a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsGkSAN1j6LMCziKibJ8aELRhUng-NFd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628678014277-la574gnadir2mvcj78un2vn36hp5v87a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
