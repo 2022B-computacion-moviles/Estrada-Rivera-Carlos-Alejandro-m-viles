@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hola_mundo">Hola Mundo, este es mi primer programa!!!  PORT-ES</string>
+    <color name="hw_Color">#EB0707</color>
+    <color name="bg_Color">#FFF1F1</color>
+</resources>

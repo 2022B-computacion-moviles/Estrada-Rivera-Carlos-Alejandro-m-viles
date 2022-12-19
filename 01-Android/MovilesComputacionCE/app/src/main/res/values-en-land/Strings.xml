@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hola_mundo">Hola Mundo, este es mi primer programa!!! LAND-EN</string>
+    <color name="hw_Color">#112A46</color>
+    <color name="bg_Color">#ACC8E5</color>
+</resources>

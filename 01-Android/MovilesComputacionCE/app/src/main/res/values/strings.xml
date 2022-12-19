@@ -1,3 +1,7 @@
 <resources>
+
     <string name="app_name">MovilesComputacionCE</string>
+    <string name="hola_mundo">Hola mundo</string>
+    <color name="hw_Color">#FF3700B3</color>
+    <color name="bg_Color">#FFEB3B</color>
 </resources>
