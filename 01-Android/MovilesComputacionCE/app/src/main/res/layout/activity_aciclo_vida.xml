@@ -12,6 +12,12 @@
         android:layout_height="wrap_content"
         android:theme="@style/Theme.MovilesComputacionCE.AppBarOverlay">
 
+        <Button
+            android:id="@+id/btn_ir_list_view"
+            android:layout_width="326dp"
+            android:layout_height="87dp"
+            android:text="List View" />
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"

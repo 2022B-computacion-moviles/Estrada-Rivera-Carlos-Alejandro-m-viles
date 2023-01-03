@@ -31,37 +31,37 @@ class ACicloVida : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
-        mostrarSncakbar("onCreate")
+        mostrarSnackbar("onCreate")
     }
 
     override fun onStart() {
         super.onStart()
-        mostrarSncakbar("onStart")
+        mostrarSnackbar("onStart")
     }
 
     override fun onRestart() {
         super.onRestart()
-        mostrarSncakbar("onRestart")
+        mostrarSnackbar("onRestart")
     }
 
     override fun onResume() {
         super.onResume()
-        mostrarSncakbar("onResume")
+        mostrarSnackbar("onResume")
     }
 
     override fun onStop() {
         super.onStop()
-        mostrarSncakbar("onStop")
+        mostrarSnackbar("onStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        mostrarSncakbar("onDestroy")
+        mostrarSnackbar("onDestroy")
     }
 
     override fun onPause() {
         super.onPause()
-        mostrarSncakbar("onPause")
+        mostrarSnackbar("onPause")
     }
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_aciclo_vida)
@@ -69,10 +69,31 @@ class ACicloVida : AppCompatActivity() {
                 || super.onSupportNavigateUp()
     }
 
-    fun mostrarSncakbar(texto:String){
+    fun mostrarSnackbar(texto:String){
         textoGlobal += texto
         Snackbar.make(findViewById(R.id.cl_ciclo_vida),
             textoGlobal, Snackbar.LENGTH_LONG)
             .setAction("Action",null).show()
+    }
+
+    //03/01/2022
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.run {
+            //guardar variables
+            //primitivos
+            putString("textoGuardado", textoGlobal)
+        }
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        val textoRecuperado: String? = savedInstanceState.getString("textoGuardado")
+        // val textoRecuperado: Int? = savedInstanceState.getString("numeroGuardado")
+        if(textoRecuperado != null){
+            mostrarSnackbar(textoRecuperado)
+            textoGlobal = textoRecuperado
+        }
     }
 }
