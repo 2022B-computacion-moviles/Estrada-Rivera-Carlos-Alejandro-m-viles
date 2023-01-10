@@ -1,6 +1,10 @@
 package com.example.movilescomputacionce
 
+import android.app.Activity
+import android.net.Uri
 import android.os.Bundle
+import android.provider.ContactsContract
+import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -8,6 +12,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.movilescomputacionce.databinding.ActivityAcicloVidaBinding
+import androidx.activity.result.contract.ActivityResultContracts
 
 class ACicloVida : AppCompatActivity() {
 
