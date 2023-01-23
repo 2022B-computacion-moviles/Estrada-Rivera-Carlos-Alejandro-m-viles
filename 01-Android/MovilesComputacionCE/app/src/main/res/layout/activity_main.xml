@@ -46,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="List view"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/btn_ciclo_vida"
         app:layout_constraintStart_toStartOf="@+id/btn_ciclo_vida"
         app:layout_constraintTop_toBottomOf="@+id/btn_ciclo_vida" />
@@ -56,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
         android:text="I. EXPLICITO"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/btn_ir_intent_implicito"
         app:layout_constraintEnd_toEndOf="@+id/btn_ir_intent_implicito"
         app:layout_constraintHorizontal_bias="1.0"
@@ -67,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
         android:text="I. IMPLICITO"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/btn_ciclo_vida"
         app:layout_constraintEnd_toEndOf="@+id/btn_ciclo_vida"
         app:layout_constraintStart_toStartOf="@+id/btn_ciclo_vida" />

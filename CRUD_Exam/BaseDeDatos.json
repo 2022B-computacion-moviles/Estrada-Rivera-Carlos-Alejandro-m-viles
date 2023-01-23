@@ -1,0 +1,1 @@
+[{"id":1,"nombre":"App_test","version":"1.0.0","descripcion":"App de prueba","usuarios":[{"id":1,"idAplicacion":1,"nombre":"Carlos","apellido":"Estrada","correo":"carlos@test.com","fechaNacimiento":"12/10/99","genero":"M"},{"id":2,"idAplicacion":1,"nombre":"Alex","apellido":"G","correo":"q@a.com","fechaNacimiento":"12/02/98","genero":"M"}]}]

@@ -60,13 +60,13 @@ class MainActivity : AppCompatActivity() {
 
         //Listener
 
-        val Btn_Ciclo_Vida = findViewById<Button>(R.id.btn_ciclo_vida)
-        Btn_Ciclo_Vida
+        val btn_Ciclo_Vida = findViewById<Button>(R.id.btn_ciclo_vida)
+        btn_Ciclo_Vida
             .setOnClickListener{
                 IrActividad(ACicloVida::class.java)
             }
-        val Btn_ir_list_View = findViewById<Button>(R.id.btn_ir_list_view)
-        Btn_Ciclo_Vida
+        val btn_ir_list_View = findViewById<Button>(R.id.btn_ir_list_view)
+        btn_Ciclo_Vida
             .setOnClickListener{
                 IrActividad(BListView::class.java)
             }
@@ -101,10 +101,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun IrActividad(
-        clase: Class<*>
-    ){
-        val intent = Intent (this, clase)
-        startActivity(intent)
-    }
+        fun IrActividad(
+            clase: Class<*>
+        ){
+            val intent = Intent (this, clase)
+            startActivity(intent)
+        }
 }
