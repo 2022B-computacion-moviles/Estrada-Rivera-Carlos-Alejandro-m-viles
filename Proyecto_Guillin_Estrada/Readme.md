@@ -1,4 +1,5 @@
-### Capturas de Preview
+## Capturas de Preview
+### Integrantes: Alexander Guillin, Carlos Estrada
 #### Historias de Usuario
 ![image](https://user-images.githubusercontent.com/53130383/214197910-7da35576-0be0-4801-8813-2e5692560d5f.png)
 #### Mockups
