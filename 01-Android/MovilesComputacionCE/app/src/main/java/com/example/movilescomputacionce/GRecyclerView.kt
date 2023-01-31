@@ -3,8 +3,10 @@ package com.example.movcompkapc
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.movilescomputacionce.BEntrenador
+import com.example.movilescomputacionce.R
 
-class GRecyclerView {}/*: AppCompatActivity{
+class GRecyclerView: AppCompatActivity{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grecycler_view)
@@ -30,4 +32,4 @@ class GRecyclerView {}/*: AppCompatActivity{
         recyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
         adaptador.notifyDataSetChanged()
     }
-}*/
+}
