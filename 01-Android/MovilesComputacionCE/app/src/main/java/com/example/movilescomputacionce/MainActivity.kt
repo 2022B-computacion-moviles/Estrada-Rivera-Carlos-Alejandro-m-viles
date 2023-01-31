@@ -13,8 +13,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 class MainActivity : AppCompatActivity() {
     val contenidoIntentExplicito =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+
             if (result.resultCode == Activity.RESULT_OK) {
-                if (result.data != null){
+                if (result.data != null) {
                     val data = result.data
                     Log.i("intent-epn", "${data?.getStringExtra("nombreModificado")}")
                 }

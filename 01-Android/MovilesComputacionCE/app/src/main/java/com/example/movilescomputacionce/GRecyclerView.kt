@@ -1,12 +1,17 @@
 package com.example.movilescomputacionce
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.movilescomputacionce.BEntrenador
 import com.example.movilescomputacionce.R
 
-class GRecyclerView: AppCompatActivity{
+class GRecyclerView: AppCompatActivity (){
+
+    var totalLikes = 0
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grecycler_view)
@@ -31,5 +36,11 @@ class GRecyclerView: AppCompatActivity{
         recyclerView.itemAnimator = androidx.recyclerview.widget.DefaultItemAnimator()
         recyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
         adaptador.notifyDataSetChanged()
+    }
+
+    fun aumentarTotalLikes(){
+        totalLikes++
+        val totalLikestextView = findViewById<TextView>(R.id.tv_total_likes)
+        totalLikestextView.text = totalLikes.toString()
     }
 }
