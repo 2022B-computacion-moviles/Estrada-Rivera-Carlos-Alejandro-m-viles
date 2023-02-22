@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HelloFigma</string>
+    <string name="title_activity_ajustes">AjustesActivity</string>
+    <string name="title_activity_tweet">TweetActivity</string>
+</resources>

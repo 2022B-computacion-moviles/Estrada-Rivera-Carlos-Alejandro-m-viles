@@ -1,0 +1,999 @@
+{
+  "name": "tweet_feed",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "RLvWmK2FqMSkDekztrOgnF",
+    "node": "2:99",
+    "version": "3052901713",
+    "component-id": "96dd060082960cd7885727736e14208829518d23"
+  },
+  "default": "Tweet-Feed",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Tweet"
+      },
+      {
+        "type": "vector",
+        "id": "Left Arrow Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Bell Stroke Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Mail Stroke Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Home Solid Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Search Stroke Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 11"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 7"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 12"
+      },
+      {
+        "type": "text",
+        "id": "Add another Tweet"
+      },
+      {
+        "type": "text",
+        "id": "17:18 · 2/14/20 · Twitter Web App"
+      },
+      {
+        "type": "text",
+        "id": "View Tweet activity"
+      },
+      {
+        "type": "text",
+        "id": "1 Like"
+      },
+      {
+        "type": "vector",
+        "id": "Activity Icon"
+      },
+      {
+        "type": "text",
+        "id": "Linkcar"
+      },
+      {
+        "type": "text",
+        "id": "@linkcar_13"
+      },
+      {
+        "type": "text",
+        "id": "Must have icon collections"
+      },
+      {
+        "type": "vector",
+        "id": "Primary account"
+      },
+      {
+        "type": "vector",
+        "id": "Down Arrow Icon"
+      },
+      {
+        "type": "image",
+        "id": "Rectangle"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle1"
+      },
+      {
+        "type": "text",
+        "id": "The Best Free Icon Packs Everyone Must Download in 2020 | GraphicM..."
+      },
+      {
+        "type": "vector",
+        "id": "Comment Stroke Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Share Stroke icon"
+      },
+      {
+        "type": "vector",
+        "id": "Retweet Stroke Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Heart Stroke Icon"
+      }
+    ],
+    "modes": {
+      "Tweet-Feed": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Tweet",
+              "Left Arrow Icon",
+              "Bell Stroke Icon",
+              "Mail Stroke Icon",
+              "Home Solid Icon",
+              "Search Stroke Icon",
+              "Rectangle 11",
+              "Ellipse 7",
+              "Rectangle 12",
+              "Add another Tweet",
+              "17:18 · 2/14/20 · Twitter Web App",
+              "View Tweet activity",
+              "1 Like",
+              "Activity Icon",
+              "Linkcar",
+              "@linkcar_13",
+              "Must have icon collections",
+              "Primary account",
+              "Down Arrow Icon",
+              "Rectangle",
+              "Rectangle1",
+              "The Best Free Icon Packs Everyone Must Download in 2020 | GraphicM...",
+              "Comment Stroke Icon",
+              "Share Stroke icon",
+              "Retweet Stroke Icon",
+              "Heart Stroke Icon"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Tweet",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "123.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "13.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "164.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "216.0",
+              "saturation": "0.2",
+              "value": "0.09803921568627451"
+            },
+            "text-content": "Tweet",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "17.0",
+            "letter-spacing": "0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Left Arrow Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "33.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "18.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "9.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            },
+            "vector-content": "left_arrow_icon.svg"
+          },
+          {
+            "id": "Bell Stroke Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "248.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "660.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            },
+            "vector-content": "bell_stroke_icon.svg"
+          },
+          {
+            "id": "Mail Stroke Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "350.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "661.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "15.0"
+              }
+            },
+            "vector-content": "mail_stroke_icon.svg"
+          },
+          {
+            "id": "Home Solid Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "41.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "659.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "22.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              }
+            },
+            "vector-content": "home_solid_icon.svg"
+          },
+          {
+            "id": "Search Stroke Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "145.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "659.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            },
+            "vector-content": "search_stroke_icon.svg"
+          },
+          {
+            "id": "Rectangle 11",
+            "drop-shadow": {
+              "color": {
+                "alpha": "1.0",
+                "hue": "210.0",
+                "saturation": "0.07804878048780488",
+                "value": "0.803921568627451"
+              },
+              "blur": "0.0",
+              "offset-x": "0.0",
+              "offset-y": "-0.33000001311302185",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "-84.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "411.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "44.0"
+              }
+            },
+            "vector-content": "rectangle_11.svg"
+          },
+          {
+            "id": "Ellipse 7",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "20.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "610.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "35.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              }
+            },
+            "vector-content": "ellipse_7.svg"
+          },
+          {
+            "id": "Rectangle 12",
+            "border-radius": "17.5",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "63.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "610.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "328.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              }
+            },
+            "vector-content": "rectangle_12.svg"
+          },
+          {
+            "id": "Add another Tweet",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "74.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "614.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "182.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.2121212121212122",
+              "value": "0.5176470588235295"
+            },
+            "text-content": "Add another Tweet",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "17:18 · 2/14/20 · Twitter Web App",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "20.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "263.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "273.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "21.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.2121212121212122",
+              "value": "0.5176470588235295"
+            },
+            "annotated-text-content": {
+              "text": "17:18 · 2/14/20 · Twitter Web App",
+              "annotated-text-span-list": [
+                {
+                  "span-start": "0",
+                  "span-length": "18"
+                },
+                {
+                  "span-start": "18",
+                  "span-length": "15",
+                  "annotated-text-style": {
+                    "font-weight": "400.0",
+                    "typeface": "Poppins",
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "209.05660377358492",
+                      "saturation": "0.6765957446808512",
+                      "value": "0.9215686274509803"
+                    }
+                  }
+                }
+              ]
+            },
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "View Tweet activity",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "42.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "303.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "191.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.2121212121212122",
+              "value": "0.5176470588235295"
+            },
+            "text-content": "View Tweet activity",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "1 Like",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "20.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "341.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "21.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.2121212121212122",
+              "value": "0.5176470588235295"
+            },
+            "annotated-text-content": {
+              "text": "1 Like",
+              "annotated-text-span-list": [
+                {
+                  "span-start": "0",
+                  "span-length": "1",
+                  "annotated-text-style": {
+                    "font-weight": "900.0",
+                    "typeface": "Poppins",
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "216.0",
+                      "saturation": "0.2",
+                      "value": "0.09803921568627451"
+                    }
+                  }
+                },
+                {
+                  "span-start": "1",
+                  "span-length": "5",
+                  "annotated-text-style": {
+                    "font-weight": "400.0",
+                    "typeface": "Poppins",
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "210.0",
+                      "saturation": "0.2121212121212122",
+                      "value": "0.5176470588235295"
+                    }
+                  }
+                }
+              ]
+            },
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Activity Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "305.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "8.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "11.0"
+              }
+            },
+            "vector-content": "activity_icon.svg"
+          },
+          {
+            "id": "Linkcar",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "93.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "56.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "62.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "21.0"
+              }
+            },
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "216.0",
+              "saturation": "0.2",
+              "value": "0.09803921568627451"
+            },
+            "text-content": "Linkcar",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "@linkcar_13",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "82.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "72.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "95.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "21.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.2121212121212122",
+              "value": "0.5176470588235295"
+            },
+            "text-content": "@linkcar_13",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Must have icon collections",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "20.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "117.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "320.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "28.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.2121212121212122",
+              "value": "0.5176470588235295"
+            },
+            "text-content": "Must have icon collections",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "22.0",
+            "letter-spacing": "-0.6000000238418579",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Primary account",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "20.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "49.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "54.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "47.0"
+              }
+            },
+            "vector-content": "primary_account.svg"
+          },
+          {
+            "id": "Down Arrow Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "end",
+                "offset": "-20.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "64.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "9.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "4.0"
+              }
+            },
+            "vector-content": "down_arrow_icon.svg"
+          },
+          {
+            "id": "Rectangle",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "20.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "145.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "61.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "stroke-width": "0.33000001311302185",
+            "stroke-color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.06363636363636366",
+              "value": "0.8627450980392157"
+            },
+            "image-content": "rectangle.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle1",
+            "border-radius": "12.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "76.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "272.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "289.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "vector-content": "rectangle1.svg"
+          },
+          {
+            "id": "The Best Free Icon Packs Everyone Must Download in 2020 | GraphicM...",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "114.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "145.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "213.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "84.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "216.0",
+              "saturation": "0.2",
+              "value": "0.09803921568627451"
+            },
+            "text-content": "The Best Free Icon Packs Everyone Must Download in 2020 | GraphicM...",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Comment Stroke Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "333.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "-489.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "13.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "13.0"
+              }
+            },
+            "vector-content": "comment_stroke_icon.svg"
+          },
+          {
+            "id": "Share Stroke icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "351.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "-489.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "vector-content": "share_stroke_icon.svg"
+          },
+          {
+            "id": "Retweet Stroke Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "287.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "-488.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "12.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "vector-content": "retweet_stroke_icon.svg"
+          },
+          {
+            "id": "Heart Stroke Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "310.0"
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": "-488.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "13.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "vector-content": "heart_stroke_icon.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Tweet-Feed",
+      "size": {
+        "width": 411.0,
+        "height": 731.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

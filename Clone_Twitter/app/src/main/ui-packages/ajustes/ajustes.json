@@ -1,0 +1,614 @@
+{
+  "name": "ajustes",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "RLvWmK2FqMSkDekztrOgnF",
+    "node": "2:56",
+    "version": "3052901713",
+    "component-id": "716e2b830b84f0fb66c9b3069bc5a3e717dbe80a"
+  },
+  "default": "Ajustes",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Messages settings"
+      },
+      {
+        "type": "text",
+        "id": "Done"
+      },
+      {
+        "type": "vector",
+        "id": "Left Arrow Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      },
+      {
+        "type": "text",
+        "id": "Privacy"
+      },
+      {
+        "type": "text",
+        "id": "Receive messages from anyone"
+      },
+      {
+        "type": "text",
+        "id": "You will be able to receive Direct Message requests from anyone on Twitter, even if you don’t follow them. Learn more"
+      },
+      {
+        "type": "group",
+        "id": "btn_activado"
+      },
+      {
+        "type": "group",
+        "id": "btn_activado1"
+      },
+      {
+        "type": "text",
+        "id": "Show read receipts"
+      },
+      {
+        "type": "text",
+        "id": "When someone sends you a message, peopla in the conversation will know when you’ve seen it. If you turn off this setting, you won’t be able to see read receipts from others. Learn more"
+      },
+      {
+        "type": "vector",
+        "id": "Mask"
+      },
+      {
+        "type": "vector",
+        "id": "Mask1"
+      },
+      {
+        "type": "vector",
+        "id": "knob"
+      },
+      {
+        "type": "vector",
+        "id": "Mask2"
+      },
+      {
+        "type": "vector",
+        "id": "Mask3"
+      },
+      {
+        "type": "vector",
+        "id": "knob1"
+      }
+    ],
+    "modes": {
+      "Ajustes": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Messages settings",
+              "Done",
+              "Left Arrow Icon",
+              "Rectangle 1",
+              "Privacy",
+              "Receive messages from anyone",
+              "You will be able to receive Direct Message requests from anyone on Twitter, even if you don’t follow them. Learn more",
+              "btn_activado",
+              "btn_activado1",
+              "Show read receipts",
+              "When someone sends you a message, peopla in the conversation will know when you’ve seen it. If you turn off this setting, you won’t be able to see read receipts from others. Learn more"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Messages settings",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "124.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "4.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "164.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "216.0",
+              "saturation": "0.2",
+              "value": "0.09803921568627451"
+            },
+            "text-content": "Messages settings",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "17.0",
+            "letter-spacing": "0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Done",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "342.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "13.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "58.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "209.05660377358492",
+              "saturation": "0.6765957446808512",
+              "value": "0.9215686274509803"
+            },
+            "text-content": "Done",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "17.0",
+            "letter-spacing": "-0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Left Arrow Icon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "28.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "18.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "9.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "17.0"
+              }
+            },
+            "vector-content": "left_arrow_icon.svg"
+          },
+          {
+            "id": "Rectangle 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "66.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "411.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "37.0"
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          },
+          {
+            "id": "Privacy",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "28.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "71.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.4235294117647059"
+            },
+            "text-content": "Privacy",
+            "italic": "true",
+            "overflow": "visible",
+            "text-size": "17.0",
+            "letter-spacing": "0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Receive messages from anyone",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "23.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "114.0"
+              }
+            },
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "216.0",
+              "saturation": "0.2",
+              "value": "0.09803921568627451"
+            },
+            "text-content": "Receive messages from anyone",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "You will be able to receive Direct Message requests from anyone on Twitter, even if you don’t follow them. Learn more",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "23.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "145.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "273.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "53.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.2121212121212122",
+              "value": "0.5176470588235295"
+            },
+            "annotated-text-content": {
+              "text": "You will be able to receive Direct Message requests from\nanyone on Twitter, even if you don’t follow them.\nLearn more  ",
+              "annotated-text-span-list": [
+                {
+                  "span-start": "0",
+                  "span-length": "107"
+                },
+                {
+                  "span-start": "107",
+                  "span-length": "11",
+                  "annotated-text-style": {
+                    "font-weight": "400.0",
+                    "typeface": "Roboto",
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "209.05660377358492",
+                      "saturation": "0.6765957446808512",
+                      "value": "0.9215686274509803"
+                    }
+                  }
+                },
+                {
+                  "span-start": "118",
+                  "span-length": "1"
+                }
+              ]
+            },
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "letter-spacing": "-0.15000000596046448",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "btn_activado",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "345.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "315.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "51.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.000152587890625"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Mask",
+              "Mask1",
+              "knob"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "btn_activado1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "345.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "145.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "51.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "31.000152587890625"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Mask2",
+              "Mask3",
+              "knob1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Show read receipts",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "23.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "273.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "145.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "216.0",
+              "saturation": "0.2",
+              "value": "0.09803921568627451"
+            },
+            "text-content": "Show read receipts",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.30000001192092896",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "When someone sends you a message, peopla in the conversation will know when you’ve seen it. If you turn off this setting, you won’t be able to see read receipts from others. Learn more",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "23.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "325.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "292.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "72.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.0",
+              "saturation": "0.2121212121212122",
+              "value": "0.5176470588235295"
+            },
+            "annotated-text-content": {
+              "text": "When someone sends you a message, peopla in the conversation will know when you’ve seen it. If you turn off this setting, you won’t be able to see read receipts from others. Learn more",
+              "annotated-text-span-list": [
+                {
+                  "span-start": "0",
+                  "span-length": "174"
+                },
+                {
+                  "span-start": "174",
+                  "span-length": "10",
+                  "annotated-text-style": {
+                    "font-weight": "400.0",
+                    "typeface": "Poppins",
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "209.05660377358492",
+                      "saturation": "0.6765957446808512",
+                      "value": "0.9215686274509803"
+                    }
+                  }
+                }
+              ]
+            },
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "letter-spacing": "-0.15000000596046448",
+            "line-height": "1.5",
+            "typeface": "Poppins"
+          },
+          {
+            "id": "Mask",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "mask.svg"
+          },
+          {
+            "id": "Mask1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "knob",
+            "margin": {
+              "left": "22.0",
+              "top": "2.0",
+              "right": "2.0",
+              "bottom": "2.000152587890625"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "knob.svg"
+          },
+          {
+            "id": "Mask2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "mask1.svg"
+          },
+          {
+            "id": "Mask3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "knob1",
+            "margin": {
+              "left": "22.0",
+              "top": "2.0",
+              "right": "2.0",
+              "bottom": "2.000152587890625"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "knob1.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Ajustes",
+      "size": {
+        "width": 411.0,
+        "height": 731.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
