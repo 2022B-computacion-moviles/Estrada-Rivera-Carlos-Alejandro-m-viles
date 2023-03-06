@@ -19,4 +19,4 @@ Otro inconveniente de Firebase es su dependencia de Google. Como Firebase es pro
 
 Por último, Firebase puede ser costoso. Aunque hay una versión gratuita de Firebase que ofrece características limitadas, los desarrolladores tendrán que pagar por los planes premium si quieren acceder a todas las características avanzadas de la plataforma. Esto puede ser un problema para los desarrolladores que tienen presupuestos limitados.
 
-En conclusión, Firebase es una plataforma de desarrollo móvil y web popular que ofrece muchas ventajas para los desarrolladores que buscan crear aplicaciones de alta calidad. La plataforma es fácil de usar, escalable y ofrece una amplia variedad de características y funcionalidades. Sin embargo, también tiene sus desventajas, como la
+En conclusión, Firebase es una plataforma de desarrollo móvil y web popular que ofrece muchas ventajas para los desarrolladores que buscan crear aplicaciones de alta calidad. La plataforma es fácil de usar, escalable y ofrece una amplia variedad de características y funcionalidades.
