@@ -2,6 +2,9 @@
 
 Firebase es una plataforma de desarrollo móvil y web creada por Google en 2011. Permite a los desarrolladores crear aplicaciones de alta calidad con características avanzadas de almacenamiento, análisis, autenticación, notificaciones, entre otras. Firebase ha ganado mucha popularidad en los últimos años debido a su fácil integración con otras herramientas y servicios de Google, así como por su capacidad para escalar de manera efectiva. Sin embargo, como cualquier otra plataforma, Firebase tiene sus pros y sus contras.
 
+![image](https://user-images.githubusercontent.com/53130383/223141533-90691794-b944-4b18-bb06-229d51816042.png)
+
+
 En el lado positivo, una de las mayores ventajas de Firebase es su facilidad de uso. La plataforma cuenta con una interfaz de usuario intuitiva que permite a los desarrolladores crear aplicaciones sin tener que escribir código. Esto es especialmente útil para aquellos desarrolladores que no tienen mucha experiencia en programación. Además, Firebase ofrece una amplia variedad de características y funcionalidades que son fáciles de integrar y utilizar en la aplicación.
 
 Otra ventaja importante de Firebase es su escalabilidad. La plataforma está diseñada para manejar cargas de trabajo grandes y pequeñas, y puede crecer con el negocio a medida que las necesidades cambian. Firebase utiliza una arquitectura de nube que permite a los desarrolladores almacenar y procesar datos de manera efectiva, lo que significa que los tiempos de carga y la velocidad de la aplicación pueden ser mejorados significativamente.
