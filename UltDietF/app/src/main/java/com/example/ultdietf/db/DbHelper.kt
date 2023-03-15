@@ -6,12 +6,12 @@ import android.database.sqlite.SQLiteOpenHelper
 
 class DbHelper(context: Context?) : SQLiteOpenHelper(
     context,
-    "ProyectoIIBMov.db",
+    "ProjectIIBMov.db",
     null,
     1
 ) {
     override fun onCreate(db: SQLiteDatabase?) {
-        val scriptSQLCrearTablaUsuario =
+        val scriptSQLCreateTableUser =
             "CREATE TABLE t_usuario(" +
                     "id_usuario INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "email_usuario TEXT NOT NULL," +
@@ -23,12 +23,12 @@ class DbHelper(context: Context?) : SQLiteOpenHelper(
                     "id_dieta INTEGER NOT NULL," +
                     "FOREIGN KEY(id_dieta) REFERENCES t_dieta(id_dieta));"
 
-        val scriptSQLCrearTablaDieta =
+        val scriptSQLCreateTableDiet =
             "CREATE TABLE t_dieta(" +
                     "id_dieta INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "tipo_dieta TEXT NOT NULL);"
 
-        val scriptSQLCrearTablaComida =
+        val scriptSQLCreateTableFood =
             "CREATE TABLE t_comida(" +
                     "id_comida INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "id_dieta INTEGER NOT NULL," +
@@ -36,12 +36,12 @@ class DbHelper(context: Context?) : SQLiteOpenHelper(
                     "horario_comida TEXT NOT NULL," +
                     "FOREIGN KEY(id_dieta) REFERENCES t_dieta(id_dieta));"
 
-        db?.execSQL(scriptSQLCrearTablaDieta)
-        db?.execSQL(scriptSQLCrearTablaUsuario)
-        db?.execSQL(scriptSQLCrearTablaComida)
+        db?.execSQL(scriptSQLCreateTableDiet)
+        db?.execSQL(scriptSQLCreateTableUser)
+        db?.execSQL(scriptSQLCreateTableFood)
     }
 
-    // Se ejecuta cuando la version cambia
+    // Runs when version changes
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db?.execSQL("DROP TABLE IF EXISTS t_dieta")
         db?.execSQL("DROP TABLE IF EXISTS t_usuario")

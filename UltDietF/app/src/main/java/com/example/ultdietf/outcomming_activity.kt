@@ -8,8 +8,9 @@ import android.os.Handler
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
-import com.example.ultdietf.R
+import com.example.ultdietf.db.DbDiet
 import com.example.ultdietf.db.DbHelper
+import com.example.ultdietf.db.DbUser
 
 class outcomming_activity : Activity() {
     private var _bg__outcomming_ek2: View? = null
@@ -32,15 +33,31 @@ class outcomming_activity : Activity() {
             finish()
         }, TIEMPO_DEMOSTRACION.toLong())
 
-        // Creando DB
+        // Create DB
         val dbHelper: DbHelper = DbHelper(this)
         val db: SQLiteDatabase = dbHelper.writableDatabase
         if (db != null) {
-            Toast.makeText(this, "BASE DE DATOS CREADA", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, "DATABASE CREATED", Toast.LENGTH_LONG).show()
         } else {
-            Toast.makeText(this, "ERROR AL CREAR LA BD", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "ERROR WHILE CREATING DATABASE", Toast.LENGTH_LONG).show()
         }
-        // Fin creacion DB
+        // End create DB
+
+        // Insert Diet
+        val diet1 = DbDiet(1, "Lose weight")
+        val diet2 = DbDiet(2, "Gain weight")
+        val diet3 = DbDiet(3, "Stain healthy")
+        diet1.inserDiet(this)
+        diet2.inserDiet(this)
+        diet3.inserDiet(this)
+        // End insert diet
+
+        // Insert User
+        val user1 = DbUser(1, 1,"alexanderguillin1999@gmail.com", "Alexander Guillin", "admin", "1.70", "60Kg", "55Kg")
+        val user2 = DbUser(2, 1,"carlos.estrada@epn.edu.ec", "Carlos Estrada", "admin", "1.72", "60Kg", "55Kg")
+        user1.insertUser(this)
+        user2.insertUser(this)
+        // End insert user
     }
 
     companion object {

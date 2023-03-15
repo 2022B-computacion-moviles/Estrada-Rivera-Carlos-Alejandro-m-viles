@@ -45,6 +45,14 @@ class configuraci_n_incial_1_activity : Activity() {
         rectangle_8 = findViewById(R.id.rectangle_8) as View
         siguiente = findViewById<View>(R.id.siguiente) as TextView
 
+        siguiente!!.setOnClickListener {
+            startActivity(
+                Intent(
+                    this@configuraci_n_incial_1_activity,
+                    configuraci_n_incial_2_activity::class.java
+                )
+            )
+        }
 
         //custom code goes here
         val focus_seleccionado = ContextCompat.getColor(this, R.color.seleccionado_color)
