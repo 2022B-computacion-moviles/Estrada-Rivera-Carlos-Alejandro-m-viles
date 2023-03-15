@@ -1,13 +1,15 @@
-
 package com.example.ultdietf
 
 import android.app.Activity
 import android.content.Intent
+import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import com.example.ultdietf.R
+import com.example.ultdietf.db.DbHelper
 
 class outcomming_activity : Activity() {
     private var _bg__outcomming_ek2: View? = null
@@ -29,6 +31,16 @@ class outcomming_activity : Activity() {
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
             finish()
         }, TIEMPO_DEMOSTRACION.toLong())
+
+        // Creando DB
+        val dbHelper: DbHelper = DbHelper(this)
+        val db: SQLiteDatabase = dbHelper.writableDatabase
+        if (db != null) {
+            Toast.makeText(this, "BASE DE DATOS CREADA", Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(this, "ERROR AL CREAR LA BD", Toast.LENGTH_LONG).show()
+        }
+        // Fin creacion DB
     }
 
     companion object {
