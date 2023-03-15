@@ -24,4 +24,11 @@
 	<color name="rectangle_8_color">#14C920</color>
 	<color name="siguiente_color">#FFFFFF</color>
 	<color name="seleccionado_color">#A5E4AA</color>
+	<color name="_bg__configuraci_n_incial_2_ek2_color">#FFFFFF</color>
+	<color name="what_is_your_height_color">#7D7F82</color>
+	<color name="rectangle_12_color">#14C920</color>
+
+	<color name="_bg__dashboard_ek2_color">#FFFFFF</color>
+	<color name="have_a_good_day__color">#7D7F82</color>
+
 </resources>
