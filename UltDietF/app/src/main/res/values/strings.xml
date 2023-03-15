@@ -3,7 +3,6 @@
 	<!-- login strings -->
 
 	<string name="app_name">UltDIet</string>
-	<string name="ek_img_content">ExportKit Image</string>
 	<string name="welcome_back___string">Welcome Back!!</string>
 	<string name="email_string">email</string>
 	<string name="password_string">password</string>
@@ -18,4 +17,14 @@
 	<string name="lose_weight_string">Lose Weight</string>
 	<string name="gain_weight_string">Gain Weight</string>
 	<string name="siguiente_string">Siguiente</string>
+	<string name="what_is_your_height_string">What is your height</string>
+	<string name="what_is_your_weight_string">What is your weight</string>
+	<string name="what_is_your_target_weight_string">What is your target weight</string>
+	<string name="_170_string">170</string>
+	<string name="_70_string">70</string>
+	<string name="_65_string">65</string>
+	<string name="have_a_good_day__string">Have a good Day!</string>
+	<string name="my_meals_string">My Meals</string>
+	<string name="breakfast_string">breakfast</string>
+	<string name="dinner_string">Dinner</string>
 </resources>
