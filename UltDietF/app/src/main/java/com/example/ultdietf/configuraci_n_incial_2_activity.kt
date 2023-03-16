@@ -16,11 +16,11 @@ class configuraci_n_incial_2_activity : Activity() {
     private var rectangle_9: ImageView? = null
     private var rectangle_10: View? = null
     private var rectangle_11: ImageView? = null
-    private var _170: TextView? = null
+    private var txt_altura: EditText? = null
     private var rectangle_12: View? = null
     private var siguiente: TextView? = null
-    private var _70: EditText? = null
-    private var _65: EditText? = null
+    private var txt_peso_a: EditText? = null
+    private var txt_peso_m: EditText? = null
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.configuraci_n_incial_2)
@@ -33,11 +33,11 @@ class configuraci_n_incial_2_activity : Activity() {
         rectangle_9 = findViewById<View>(R.id.rectangle_9) as ImageView
         rectangle_10 = findViewById<View>(R.id.rectangle_10) as View
         rectangle_11 = findViewById<View>(R.id.rectangle_11) as ImageView
-        _170 = findViewById<View>(R.id._170) as TextView
+        txt_altura = findViewById<View>(R.id.txt_altura) as EditText
         rectangle_12 = findViewById<View>(R.id.rectangle_12) as View
         siguiente = findViewById<View>(R.id.siguiente) as TextView
-        //_70 = findViewById<View>(R.id._70) as EditText
-        //_65 = findViewById<View>(R.id._65) as EditText
+        txt_peso_a = findViewById<View>(R.id.txt_peso_a) as EditText
+        txt_peso_m = findViewById<View>(R.id.txt_peso_m) as EditText
 
 
         //custom code goes here

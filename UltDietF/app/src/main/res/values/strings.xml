@@ -27,4 +27,10 @@
 	<string name="my_meals_string">My Meals</string>
 	<string name="breakfast_string">breakfast</string>
 	<string name="dinner_string">Dinner</string>
+	<string name="all_ready___string">ALL READY!!</string>
+	<string name="your_email_string">your email</string>
+	<string name="your_name_string">your name</string>
+	<string name="your_password_string">your  password</string>
+	<string name="repeat_password_string">repeat password</string>
+	<string name="sign_up_string">Sign up</string>
 </resources>
