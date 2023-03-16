@@ -2,6 +2,7 @@ package com.example.ultdietf.db
 
 import android.content.ContentValues
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 
 class DbUser(
@@ -109,5 +110,27 @@ class DbUser(
         values.put("id_dieta", this.idDiet)
 
         return db.insert("t_usuario", null, values)
+    }
+
+    fun verifyUserAndPassword(context: Context, email: String, password: String): Boolean {
+        var answerUserAndPassword = false
+        val dbHelper: DbHelper = DbHelper(context)
+        val db: SQLiteDatabase = dbHelper.writableDatabase
+
+        var userCursor: Cursor? = null
+
+        userCursor = db.rawQuery("SELECT email_usuario, password_usuario FROM t_usuario", null)
+
+        if (userCursor.moveToFirst()) {
+            do {
+                if (userCursor.getString(0).equals(email) && userCursor.getString(1)
+                        .equals(password)
+                ) {
+                    answerUserAndPassword = true
+                    break
+                }
+            } while (userCursor.moveToNext())
+        }
+        return answerUserAndPassword
     }
 }

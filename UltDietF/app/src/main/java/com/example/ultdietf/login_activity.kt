@@ -1,15 +1,12 @@
-
 package com.example.ultdietf
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.RelativeLayout
-import android.widget.TextView
+import android.widget.*
 import com.example.ultdietf.R
+import com.example.ultdietf.db.DbUser
 
 class login_activity : Activity() {
     private var _bg__login_ek2: View? = null
@@ -44,17 +41,29 @@ class login_activity : Activity() {
         login_ek3 = findViewById<View>(R.id.login_ek3) as TextView
         forgot_password_ = findViewById<View>(R.id.forgot_password_) as TextView
 
-
-        //custom code goes here
         //Back a outcomming
         val btn_back = findViewById<View>(R.id.left_1) as ImageView
         btn_back.setOnClickListener {
-            startActivity(
-                Intent(
-                    this@login_activity,
-                    outcomming2_activity::class.java
-                )
-            )
+            goToActivity(outcomming2_activity::class.java)
         }
+
+        // Verify user and password
+        val userAux = DbUser(0,0,"","","","","","")
+        login_ek3!!.setOnClickListener {
+            val answer = userAux.verifyUserAndPassword(this, txt_email_l!!.text.toString(), txt_password_l!!.text.toString())
+            if(answer){
+                Toast.makeText(this, "USER VERIFIED", Toast.LENGTH_LONG).show()
+                goToActivity(dashboard_activity::class.java)
+            }else{
+                Toast.makeText(this, "WRONG USER OR PASSWORD" + txt_email_l!!.text.toString() + " " + txt_password_l!!.text.toString(), Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+
+    fun goToActivity(
+        clase: Class<*>
+    ) {
+        val intent = Intent(this, clase)
+        startActivity(intent)
     }
 }

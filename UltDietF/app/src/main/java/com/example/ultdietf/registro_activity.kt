@@ -52,11 +52,12 @@ class registro_activity : Activity() {
             DbUser.userAux.setname(txt_nombre!!.text.toString())
 
             // Verify password if true setPassword
-            if (txt_pwd_i.toString().equals(txt_pwd_v.toString())) {
-                DbUser.userAux.setemail(txt_pwd_i!!.text.toString())
+            if (txt_pwd_i!!.text.toString().equals(txt_pwd_v!!.text.toString())) {
+                DbUser.userAux.setpassword(txt_pwd_i!!.text.toString())
                 val answerInsertUser = DbUser.userAux.insertUser(this)
                 if (answerInsertUser > 0) {
                     Toast.makeText(this, "USER REGISTERED", Toast.LENGTH_LONG).show()
+                    goToActivity(alternativas_dietas_activity::class.java)
                 } else {
                     Toast.makeText(this, "USER REGISTRATION ERROR", Toast.LENGTH_LONG).show()
                 }

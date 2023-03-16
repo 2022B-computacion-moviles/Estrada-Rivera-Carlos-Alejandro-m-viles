@@ -1,4 +1,3 @@
-
 package com.example.ultdietf
 
 import android.app.Activity
@@ -38,22 +37,19 @@ class outcomming2_activity : Activity() {
         //Listener Cambiar a configuracion 1
         val btn_start = findViewById<View>(R.id.btn_start) as RelativeLayout
         btn_start.setOnClickListener {
-            startActivity(
-                Intent(
-                    this@outcomming2_activity,
-                    configuraci_n_incial_1_activity::class.java
-                )
-            )
+            goToActivity(configuraci_n_incial_1_activity::class.java)
         }
         //Listener a Login
         val btn_login = findViewById<View>(R.id.btn_login) as RelativeLayout
         btn_login.setOnClickListener {
-            startActivity(
-                Intent(
-                    this@outcomming2_activity,
-                    login_activity::class.java
-                )
-            )
+            goToActivity(login_activity::class.java)
         }
+    }
+
+    fun goToActivity(
+        clase: Class<*>
+    ) {
+        val intent = Intent(this, clase)
+        startActivity(intent)
     }
 }
