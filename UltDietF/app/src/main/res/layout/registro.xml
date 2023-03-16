@@ -49,7 +49,8 @@
 				 android:layout_marginStart="57dp"
 				android:layout_marginTop="232dp"
 				android:layout_width="250dp"
-				android:layout_height="50dp" />
+				android:layout_height="50dp"
+				/>
 
 			<View   android:id="@+id/rectangle_14"
 				android:background="@drawable/rectangle_14_shape"
@@ -147,6 +148,49 @@
 					 />
 
 			</RelativeLayout>
+			<EditText
+				android:id="@+id/txt_email"
+				android:layout_marginStart="57dp"
+				android:layout_marginTop="232dp"
+				android:layout_width="250dp"
+				android:layout_height="50dp"
+				android:ems="10"
+				android:inputType="textEmailAddress"
+				android:importantForAccessibility="no"
+				/>
+
+			<EditText
+				android:id="@+id/txt_pwd_i"
+				android:layout_width="250dp"
+				android:layout_height="50dp"
+				android:layout_marginStart="57dp"
+				android:layout_marginTop="486dp"
+				android:ems="10"
+				android:inputType="textPassword"
+				android:importantForAccessibility="no"
+				/>
+
+			<EditText
+				android:id="@+id/editTextTextPassword2"
+				android:layout_width="250dp"
+				android:layout_height="50dp"
+				android:layout_marginStart="57dp"
+				android:layout_marginTop="613dp"
+				android:ems="10"
+				android:inputType="textPassword"
+				android:importantForAccessibility="no"/>
+
+			<EditText
+				android:id="@+id/editTextTextPersonName"
+				android:layout_marginStart="58dp"
+				android:layout_marginTop="359dp"
+				android:layout_width="250dp"
+				android:layout_height="50dp"
+				android:ems="10"
+				android:inputType="textPersonName"
+				android:importantForAccessibility="no"
+				/>
+
 		</RelativeLayout>
 
 	</ScrollView>
