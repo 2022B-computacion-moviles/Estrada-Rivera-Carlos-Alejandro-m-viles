@@ -5,6 +5,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
@@ -24,6 +25,8 @@ class login_activity : Activity() {
     private var rectangle_4: View? = null
     private var login_ek3: TextView? = null
     private var forgot_password_: TextView? = null
+    private var txt_email_l: EditText? = null
+    private var txt_password_l: EditText? = null
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
@@ -32,9 +35,9 @@ class login_activity : Activity() {
         left_1 = findViewById<View>(R.id.left_1) as ImageView
         waving_hand = findViewById<View>(R.id.waving_hand) as ImageView
         rectangle_2 = findViewById(R.id.rectangle_2) as View
-        email = findViewById<View>(R.id.email) as TextView
+        txt_email_l = findViewById<EditText>(R.id.txt_email_l) as EditText
         email_1 = findViewById<View>(R.id.email_1) as ImageView
-        password = findViewById<View>(R.id.password) as TextView
+        txt_password_l = findViewById<EditText>(R.id.txt_password_l) as EditText
         rectangle_3 = findViewById(R.id.rectangle_3) as View
         password_1 = findViewById<View>(R.id.password_1) as ImageView
         rectangle_4 = findViewById(R.id.rectangle_4) as View
@@ -43,7 +46,7 @@ class login_activity : Activity() {
 
 
         //custom code goes here
-        //Back a Login
+        //Back a outcomming
         val btn_back = findViewById<View>(R.id.left_1) as ImageView
         btn_back.setOnClickListener {
             startActivity(
