@@ -33,4 +33,10 @@
 	<string name="your_password_string">your  password</string>
 	<string name="repeat_password_string">repeat password</string>
 	<string name="sign_up_string">Sign up</string>
+	<string name="choose_yout_diet_string">Choose yout diet</string>
+	<string name="option_1_string">Option 1</string>
+	<string name="option_3_string">Option 3</string>
+	<string name="option_2_string">Option 2</string>
+	<string name="skip_string">Skip</string>
+	<string name="choose_string">Choose</string>
 </resources>

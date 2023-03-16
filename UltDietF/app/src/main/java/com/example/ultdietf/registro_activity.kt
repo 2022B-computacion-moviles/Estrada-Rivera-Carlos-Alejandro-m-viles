@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -17,6 +18,10 @@ class registro_activity : Activity() {
     private var your_email: TextView? = null
     private var your_name: TextView? = null
     private var your_password: TextView? = null
+    private var txt_email: EditText? = null
+    private var txt_nombre: EditText? = null
+    private var txt_pwd_i: EditText? = null
+    private var txt_pwd_v: EditText? = null
     private var repeat_password: TextView? = null
     private var rectangle_15: View? = null
     private var rectangle_16: View? = null
@@ -37,15 +42,18 @@ class registro_activity : Activity() {
         rectangle_16 = findViewById<View>(R.id.rectangle_16) as View
         rectangle_17 = findViewById<View>(R.id.rectangle_17) as View
         sign_up = findViewById<View>(R.id.sign_up) as TextView
-
+        txt_email = findViewById<EditText>(R.id.txt_email) as EditText
+        txt_nombre = findViewById<EditText>(R.id.txt_nombre) as EditText
+        txt_pwd_i = findViewById<EditText>(R.id.txt_pwd_i) as EditText
+        txt_pwd_v = findViewById<EditText>(R.id.txt_pwd_v) as EditText
         // Get the information of the user
         sign_up!!.setOnClickListener {
-            DbUser.userAux.setemail(your_email!!.text.toString())
-            DbUser.userAux.setname(your_name!!.text.toString())
+            DbUser.userAux.setemail(txt_email!!.text.toString())
+            DbUser.userAux.setname(txt_nombre!!.text.toString())
 
             // Verify password if true setPassword
-            if (your_password.toString().equals(repeat_password.toString())) {
-                DbUser.userAux.setemail(your_password!!.text.toString())
+            if (txt_pwd_i.toString().equals(txt_pwd_v.toString())) {
+                DbUser.userAux.setemail(txt_pwd_i!!.text.toString())
                 val answerInsertUser = DbUser.userAux.insertUser(this)
                 if (answerInsertUser > 0) {
                     Toast.makeText(this, "USER REGISTERED", Toast.LENGTH_LONG).show()
@@ -54,9 +62,9 @@ class registro_activity : Activity() {
                 }
             } else {
                 Toast.makeText(this, "VERIFY PASSWORD", Toast.LENGTH_LONG).show()
-                your_password!!.setText("")
-                repeat_password!!.setText("")
-                your_password!!.requestFocus()
+                txt_pwd_i!!.setText("")
+                txt_pwd_v!!.setText("")
+                txt_pwd_i!!.requestFocus()
             }
 
         }

@@ -34,4 +34,9 @@
 	<color name="all_ready___color">#7D7F82</color>
 	<color name="rectangle_17_color">#14C920</color>
 	<color name="sign_up_color">#FFFFFF</color>
+
+	<color name="choose_yout_diet_color">#7D7F82</color>
+	<color name="rectangle_19_color">#14C920</color>
+	<color name="skip_color">#FFFFFF</color>
+
 </resources>
