@@ -1,6 +1,7 @@
 
 package com.example.ultdietf
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.Bundle
 import android.view.View
@@ -24,6 +25,7 @@ class alternativas_dietas_activity : Activity() {
     private var salad: ImageView? = null
     private var meat: ImageView? = null
     private var fish: ImageView? = null
+    @SuppressLint("MissingInflatedId")
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.alternativas_dietas)
