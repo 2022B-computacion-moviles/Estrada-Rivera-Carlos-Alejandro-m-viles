@@ -14,10 +14,13 @@
 package com.example.ultdietf
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import com.example.ultdietf.db.DbUser
 
 class registro_activity : Activity() {
     private var all_ready__: TextView? = null
@@ -48,7 +51,34 @@ class registro_activity : Activity() {
         rectangle_17 = findViewById<View>(R.id.rectangle_17) as View
         sign_up = findViewById<View>(R.id.sign_up) as TextView
 
+        // Get the information of the user
+        sign_up!!.setOnClickListener {
+            DbUser.userAux.setemail(your_email!!.text.toString())
+            DbUser.userAux.setname(your_name!!.text.toString())
 
-        //custom code goes here
+            // Verify password if true setPassword
+            if (your_password.toString().equals(repeat_password.toString())) {
+                DbUser.userAux.setemail(your_password!!.text.toString())
+                val answerInsertUser = DbUser.userAux.insertUser(this)
+                if (answerInsertUser > 0) {
+                    Toast.makeText(this, "USER REGISTERED", Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(this, "USER REGISTRATION ERROR", Toast.LENGTH_LONG).show()
+                }
+            } else {
+                Toast.makeText(this, "VERIFY PASSWORD", Toast.LENGTH_LONG).show()
+                your_password!!.setText("")
+                repeat_password!!.setText("")
+                your_password!!.requestFocus()
+            }
+
+        }
+    }
+
+    fun goToActivity(
+        clase: Class<*>
+    ) {
+        val intent = Intent(this, clase)
+        startActivity(intent)
     }
 }

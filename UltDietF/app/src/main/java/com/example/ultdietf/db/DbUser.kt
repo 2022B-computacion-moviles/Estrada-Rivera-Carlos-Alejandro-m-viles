@@ -28,6 +28,7 @@ class DbUser(
 
     companion object {
         var chooseGoal: Int = 0
+        var userAux = DbUser(0,0,"","", "", "", "", "")
     }
 
     fun setidUser(idUser: Int) {

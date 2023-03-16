@@ -46,13 +46,10 @@ class configuraci_n_incial_1_activity : Activity() {
         siguiente = findViewById<View>(R.id.siguiente) as TextView
 
         siguiente!!.setOnClickListener {
-            startActivity(
-                Intent(
-                    this@configuraci_n_incial_1_activity,
-                    configuraci_n_incial_2_activity::class.java
-                )
-            )
+            goToActivity(configuraci_n_incial_2_activity::class.java)
         }
+
+        // Get the goal of the user with the companion object
 
         //custom code goes here
         val focus_seleccionado = ContextCompat.getColor(this, R.color.seleccionado_color)
@@ -60,39 +57,37 @@ class configuraci_n_incial_1_activity : Activity() {
         //Listener Regresar a start
         val btn_back = findViewById<View>(R.id.left_2) as ImageView
         btn_back.setOnClickListener {
-            startActivity(
-                Intent(
-                    this@configuraci_n_incial_1_activity,
-                    outcomming2_activity::class.java
-                )
-            )
+            goToActivity(outcomming2_activity::class.java)
         }
         //Elección y Detección de los tipos
         val opcion_loss = findViewById<View>(R.id.btn_lose_w) as RelativeLayout
-        opcion_loss.setOnClickListener{
+        opcion_loss.setOnClickListener {
             is_pressed = true
             var seleccionado = findViewById<View>(R.id.rectangle_5) as View
-            if (is_pressed){
+            if (is_pressed) {
 
                 seleccionado.setBackgroundColor(focus_seleccionado)
-            }
-            else{
+            } else {
 
             }
         }
         is_pressed = false
         val opcion_gain = findViewById<View>(R.id.btn_gain_w) as RelativeLayout
-        opcion_gain.setOnClickListener{
+        opcion_gain.setOnClickListener {
             is_pressed = true
             var seleccionado = findViewById<View>(R.id.rectangle_6) as View
-            if (is_pressed){
-
+            if (is_pressed) {
                 seleccionado.setBackgroundColor(focus_seleccionado)
-            }
-            else{
+            } else {
                 seleccionado.setBackgroundColor(unfocus_seleccionado)
             }
         }
+    }
 
+    fun goToActivity(
+        clase: Class<*>
+    ) {
+        val intent = Intent(this, clase)
+        startActivity(intent)
     }
 }

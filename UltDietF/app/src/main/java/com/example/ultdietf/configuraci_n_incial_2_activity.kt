@@ -1,11 +1,13 @@
 package com.example.ultdietf
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.ultdietf.db.DbUser
 
 class configuraci_n_incial_2_activity : Activity() {
     private var _bg__configuraci_n_incial_2_ek2: View? = null
@@ -39,7 +41,31 @@ class configuraci_n_incial_2_activity : Activity() {
         txt_peso_a = findViewById<View>(R.id.txt_peso_a) as EditText
         txt_peso_m = findViewById<View>(R.id.txt_peso_m) as EditText
 
+        cleanEditText()
 
-        //custom code goes here
+        // Get height, actual weight and target weight
+        siguiente!!.setOnClickListener {
+            DbUser.userAux.setheight(txt_altura!!.text.toString())
+            DbUser.userAux.setactualWeight(txt_peso_a!!.text.toString())
+            DbUser.userAux.settargetWeight(txt_peso_m!!.text.toString())
+
+            // Clean TextView
+            cleanEditText()
+            // Go to registro_activity
+            goToActivity(registro_activity::class.java)
+        }
+    }
+
+    fun cleanEditText(){
+        txt_altura!!.setText("")
+        txt_peso_a!!.setText("")
+        txt_peso_m!!.setText("")
+    }
+
+    fun goToActivity(
+        clase: Class<*>
+    ) {
+        val intent = Intent(this, clase)
+        startActivity(intent)
     }
 }
