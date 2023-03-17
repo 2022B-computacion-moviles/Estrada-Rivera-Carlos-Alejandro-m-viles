@@ -33,7 +33,7 @@
 					android:layout_width="360dp"
 					android:layout_height="339dp" />
 
-				<ImageView android:id="@+id/vince_veras_ajiqzdaud7a_unsplash_1"
+				<ImageView android:id="@+id/btn_foto_perfil"
 					android:src="@drawable/_vince_veras_ajiqzdaud7a_unsplash_1"
 					android:contentDescription="vince_veras_ajiqzdaud7a_unsplash_1"
 					 android:layout_marginStart="17dp"
