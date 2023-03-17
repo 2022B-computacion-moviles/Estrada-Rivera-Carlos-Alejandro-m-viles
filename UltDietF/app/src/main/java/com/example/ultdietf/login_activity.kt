@@ -53,6 +53,7 @@ class login_activity : Activity() {
             val answer = userAux.verifyUserAndPassword(this, txt_email_l!!.text.toString(), txt_password_l!!.text.toString())
             if(answer){
                 Toast.makeText(this, "USER VERIFIED", Toast.LENGTH_LONG).show()
+                // Set DbUser.chooseGoal and DbUser.chooseDiet
                 goToActivity(dashboard_activity::class.java)
             }else{
                 Toast.makeText(this, "WRONG USER OR PASSWORD" + txt_email_l!!.text.toString() + " " + txt_password_l!!.text.toString(), Toast.LENGTH_LONG).show()

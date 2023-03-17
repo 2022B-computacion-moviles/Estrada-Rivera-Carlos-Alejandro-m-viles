@@ -75,6 +75,22 @@ class DbDiet(
         return list
     }
 
+    fun getRealIdDiet(goal: Int, idDiet: Int): Int{
+        var realIdDiet = 0
+        when(goal){
+            (1) -> {
+                realIdDiet = idDiet
+            }
+            (2) -> {
+                realIdDiet = idDiet + 3
+            }
+            (3) -> {
+                realIdDiet = idDiet + 6
+            }
+        }
+        return  realIdDiet
+    }
+
     override fun toString(): String {
         return this.typeDiet
     }

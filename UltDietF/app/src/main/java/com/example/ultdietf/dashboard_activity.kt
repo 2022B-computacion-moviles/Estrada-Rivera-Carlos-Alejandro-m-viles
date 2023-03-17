@@ -1,4 +1,3 @@
-
 package com.example.ultdietf
 
 import android.app.Activity
@@ -6,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import com.example.ultdietf.db.DbFood
 
 class dashboard_activity : Activity() {
     private var _bg__dashboard_ek2: View? = null
@@ -37,7 +38,14 @@ class dashboard_activity : Activity() {
         breakfast_ek1 = findViewById<View>(R.id.breakfast_ek1) as ImageView
         meal = findViewById<View>(R.id.meal) as ImageView
 
-
-        //custom code goes here
+        // Get foods of the diets
+        var foodAux = DbFood(0, 0, "","")
+        var arrayListFood = foodAux.selectFoods(this)
+        breakfast!!.setOnClickListener {
+            Toast.makeText(this, arrayListFood[0].toString(), Toast.LENGTH_LONG).show()
+        }
+        dinner!!.setOnClickListener {
+            Toast.makeText(this, arrayListFood[1].toString(), Toast.LENGTH_LONG).show()
+        }
     }
 }

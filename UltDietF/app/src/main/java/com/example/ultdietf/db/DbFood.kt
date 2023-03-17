@@ -2,6 +2,7 @@ package com.example.ultdietf.db
 
 import android.content.ContentValues
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 
 class DbFood(
@@ -59,5 +60,32 @@ class DbFood(
         values.put("horario_comida", this.schedule)
 
         return db.insert("t_comida", null, values)
+    }
+
+    fun selectFoods(context: Context): ArrayList<DbFood> {
+        var list = ArrayList<DbFood>()
+        val dbHelper: DbHelper = DbHelper(context)
+        val db: SQLiteDatabase = dbHelper.writableDatabase
+
+        var food: DbFood
+        var cursor: Cursor? = null
+
+        cursor = db.rawQuery("SELECT id_dieta, descripcion_comida, horario_comida FROM t_comida", null)
+        var dietAux = DbDiet(0, "")
+        var idRealDiet = dietAux.getRealIdDiet(DbUser.chooseGoal, DbUser.chooseDiet)
+
+        if (cursor.moveToFirst()) {
+            do {
+                food = DbFood(0, cursor.getString(0).toInt(), cursor.getString(1), cursor.getString(2))
+                if(cursor.getString(0).toInt() == idRealDiet){
+                    list.add(food)
+                }
+            } while (cursor.moveToNext())
+        }
+        return list
+    }
+
+    override fun toString(): String {
+        return this.description
     }
 }

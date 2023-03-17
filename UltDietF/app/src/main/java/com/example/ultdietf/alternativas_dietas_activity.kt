@@ -67,8 +67,6 @@ class alternativas_dietas_activity : Activity() {
         val focus_seleccionado = ContextCompat.getColor(this, R.color.seleccionado_color)
         val unfocus_seleccionado = ContextCompat.getColor(this, R.color.what_is_your_goal__color)
 
-
-
         //Elección y Detección de los tipos
         val opcion_diet1 = findViewById<View>(R.id.btn_diet1) as View
         opcion_diet1.setOnClickListener {
@@ -94,14 +92,26 @@ class alternativas_dietas_activity : Activity() {
             btn_diet3!!.setBackgroundColor(focus_seleccionado)
         }
 
-        //Skip to dashboard
-        btn_skip1?.setOnClickListener{
+        // Skip to dashboard
+        skip!!.setOnClickListener{
             goToActivity(dashboard_activity::class.java)
         }
-        //Save Diet to dashboard revisar*
-        btn_choose2?.setOnClickListener{
-            goToActivity(dashboard_activity::class.java)
-            //save in database code maybe
+        // Save Diet to dashboard revisar*
+        choose!!.setOnClickListener{
+            // Save diet and update the last user
+            var userAux = DbUser(0,0,"","","","","","")
+            var dietAux = DbDiet(0, "")
+            val idLastUser = userAux.getTotalUsers(this)
+            userAux = userAux.getUserById(this, idLastUser)
+            userAux.setidDiet(dietAux.getRealIdDiet(DbUser.chooseGoal, DbUser.chooseDiet))
+            val answerDiet = userAux.updateUser(this)
+
+            if(answerDiet > 0){
+                Toast.makeText(this, "DIET REGISTERED", Toast.LENGTH_LONG).show()
+                goToActivity(dashboard_activity::class.java)
+            }else{
+                Toast.makeText(this, "ERROR REGISTERING THE DIET", Toast.LENGTH_LONG).show()
+            }
         }
         //go back
         left_5?.setOnClickListener{
