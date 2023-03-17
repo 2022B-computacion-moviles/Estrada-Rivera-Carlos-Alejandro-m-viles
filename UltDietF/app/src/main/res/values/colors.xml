@@ -42,4 +42,8 @@
 	<color name="rectangle_20_color">#7D7F82</color>
 	<color name="rectangle_21_color">#14C920</color>
 	<color name="exit_color">#FFFFFF</color>
+
+	<color name="my_target_weight_color">#7D7F82</color>
+	<color name="rectangle_23_color">#14C920</color>
+	<color name="save_color">#FFFFFF</color>
 </resources>

@@ -44,4 +44,9 @@
 	<string name="my_goals_string">My Goals</string>
 	<string name="change_diet_string">Change Diet</string>
 	<string name="recipe_book_string">Recipe Book</string>
+	<string name="my_target_weight_string">My Target weight</string>
+	<string name="my_target_weight_ek1_string">My Target weight</string>
+	<string name="_65_kg_string">65 KG</string>
+	<string name="lose_weight_string">Lose Weight</string>
+	<string name="save_string">Save</string>
 </resources>
