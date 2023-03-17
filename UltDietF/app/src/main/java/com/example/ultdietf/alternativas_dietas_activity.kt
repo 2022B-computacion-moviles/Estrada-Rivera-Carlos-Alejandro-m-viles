@@ -95,16 +95,16 @@ class alternativas_dietas_activity : Activity() {
         }
 
         //Skip to dashboard
-        btn_skip1!!.setOnClickListener{
+        btn_skip1?.setOnClickListener{
             goToActivity(dashboard_activity::class.java)
         }
-        //Save Diet to dashboard
-        btn_choose2!!.setOnClickListener{
+        //Save Diet to dashboard revisar*
+        btn_choose2?.setOnClickListener{
             goToActivity(dashboard_activity::class.java)
             //save in database code maybe
         }
         //go back
-        left_5!!.setOnClickListener{
+        left_5?.setOnClickListener{
             goToActivity(configuraci_n_incial_2_activity::class.java)
         }
     }
