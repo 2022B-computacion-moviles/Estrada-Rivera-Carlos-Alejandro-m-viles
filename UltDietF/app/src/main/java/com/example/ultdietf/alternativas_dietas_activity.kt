@@ -94,6 +94,14 @@ class alternativas_dietas_activity : Activity() {
 
         // Skip to dashboard
         skip!!.setOnClickListener{
+            DbUser.chooseDiet = 1
+            // Save diet and update the last user (default)
+            var userAux = DbUser(0,0,"","","","","","")
+            var dietAux = DbDiet(0, "")
+            val idLastUser = userAux.getTotalUsers(this)
+            userAux = userAux.getUserById(this, idLastUser)
+            userAux.setidDiet(dietAux.getRealIdDiet(DbUser.chooseGoal, DbUser.chooseDiet))
+            val answerDiet = userAux.updateUser(this)
             goToActivity(dashboard_activity::class.java)
         }
         // Save Diet to dashboard revisar*
