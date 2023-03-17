@@ -22,7 +22,7 @@
 				android:text="@string/choose_yout_diet_string"
 				 />
 
-			<View   android:id="@+id/rectangle_5"
+			<View   android:id="@+id/btn_diet1"
 				android:background="@drawable/rectangle_5_shape"
 				 android:alpha="0.30000001192093"
 				 android:layout_marginStart="55dp"
@@ -30,7 +30,7 @@
 				android:layout_width="252dp"
 				android:layout_height="82dp" />
 
-			<View   android:id="@+id/rectangle_6"
+			<View   android:id="@+id/btn_diet2"
 				android:background="@drawable/rectangle_6_shape"
 				 android:alpha="0.15000000596046"
 				 android:layout_marginStart="57dp"
@@ -38,7 +38,7 @@
 				android:layout_width="252dp"
 				android:layout_height="82dp" />
 
-			<View   android:id="@+id/rectangle_7"
+			<View   android:id="@+id/btn_diet3"
 				android:background="@drawable/rectangle_7_shape"
 				 android:alpha="0.15000000596046"
 				 android:layout_marginStart="55dp"

@@ -29,6 +29,7 @@ class DbUser(
 
     companion object {
         var chooseGoal: Int = 0
+        var chooseDiet: Int = 0
         var userAux = DbUser(0,0,"","", "", "", "", "")
     }
 

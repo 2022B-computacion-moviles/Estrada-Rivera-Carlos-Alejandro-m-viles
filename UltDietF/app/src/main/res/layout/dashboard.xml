@@ -34,7 +34,7 @@
 					android:layout_height="339dp" />
 
 				<ImageView android:id="@+id/vince_veras_ajiqzdaud7a_unsplash_1"
-					android:src="@drawable/vince_veras_ajiqzdaud7a_unsplash_1"
+					android:src="@drawable/_vince_veras_ajiqzdaud7a_unsplash_1"
 					android:contentDescription="vince_veras_ajiqzdaud7a_unsplash_1"
 					 android:layout_marginStart="17dp"
 					android:layout_marginTop="30dp"

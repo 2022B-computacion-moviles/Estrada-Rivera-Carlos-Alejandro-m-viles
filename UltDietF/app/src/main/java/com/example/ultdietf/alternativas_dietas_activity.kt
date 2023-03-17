@@ -2,19 +2,22 @@ package com.example.ultdietf
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.ultdietf.db.DbDiet
+import com.example.ultdietf.db.DbUser
 
 class alternativas_dietas_activity : Activity() {
     private var choose_yout_diet: TextView? = null
-    private var rectangle_5: View? = null
-    private var rectangle_6: View? = null
-    private var rectangle_7: View? = null
+    private var btn_diet1: View? = null
+    private var btn_diet2: View? = null
+    private var btn_diet3: View? = null
     private var option_1: TextView? = null
     private var option_3: TextView? = null
     private var option_2: TextView? = null
@@ -28,14 +31,18 @@ class alternativas_dietas_activity : Activity() {
     private var meat: ImageView? = null
     private var fish: ImageView? = null
 
+    //Skip Button
+    private var btn_skip1: RelativeLayout? = null
+    // Choose Button
+    private var btn_choose2: RelativeLayout? = null
     @SuppressLint("MissingInflatedId")
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.alternativas_dietas)
         choose_yout_diet = findViewById<View>(R.id.choose_yout_diet) as TextView
-        rectangle_5 = findViewById(R.id.rectangle_5) as View
-        rectangle_6 = findViewById(R.id.rectangle_6) as View
-        rectangle_7 = findViewById(R.id.rectangle_7) as View
+        btn_diet1 = findViewById(R.id.btn_diet1) as View
+        btn_diet2 = findViewById(R.id.btn_diet2) as View
+        btn_diet3 = findViewById(R.id.btn_diet3) as View
         option_1 = findViewById<View>(R.id.option_1) as TextView
         option_3 = findViewById<View>(R.id.option_3) as TextView
         option_2 = findViewById<View>(R.id.option_2) as TextView
@@ -61,5 +68,50 @@ class alternativas_dietas_activity : Activity() {
         val unfocus_seleccionado = ContextCompat.getColor(this, R.color.what_is_your_goal__color)
 
 
+
+        //Elección y Detección de los tipos
+        val opcion_diet1 = findViewById<View>(R.id.btn_diet1) as View
+        opcion_diet1.setOnClickListener {
+            DbUser.chooseDiet = 1
+            btn_diet1!!.setBackgroundColor(focus_seleccionado)
+            btn_diet2!!.setBackgroundColor(unfocus_seleccionado)
+            btn_diet3!!.setBackgroundColor(unfocus_seleccionado)
+        }
+
+        val opcion_diet2 = findViewById<View>(R.id.btn_diet2) as View
+        opcion_diet2.setOnClickListener {
+            DbUser.chooseDiet = 2
+            btn_diet1!!.setBackgroundColor(unfocus_seleccionado)
+            btn_diet2!!.setBackgroundColor(focus_seleccionado)
+            btn_diet3!!.setBackgroundColor(unfocus_seleccionado)
+        }
+
+        val opcion_diet3 = findViewById<View>(R.id.btn_diet3) as View
+        opcion_diet3.setOnClickListener {
+            DbUser.chooseDiet = 3
+            btn_diet1!!.setBackgroundColor(unfocus_seleccionado)
+            btn_diet2!!.setBackgroundColor(unfocus_seleccionado)
+            btn_diet3!!.setBackgroundColor(focus_seleccionado)
+        }
+
+        //Skip to dashboard
+        btn_skip1!!.setOnClickListener{
+            goToActivity(dashboard_activity::class.java)
+        }
+        //Save Diet to dashboard
+        btn_choose2!!.setOnClickListener{
+            goToActivity(dashboard_activity::class.java)
+            //save in database code maybe
+        }
+        //go back
+        left_5!!.setOnClickListener{
+            goToActivity(configuraci_n_incial_2_activity::class.java)
+        }
+    }
+    fun goToActivity(
+        clase: Class<*>
+    ) {
+        val intent = Intent(this, clase)
+        startActivity(intent)
     }
 }
