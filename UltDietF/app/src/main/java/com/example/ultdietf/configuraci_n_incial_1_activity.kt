@@ -10,6 +10,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.example.ultdietf.R
+import com.example.ultdietf.db.DbUser
 
 class configuraci_n_incial_1_activity : Activity() {
     private var what_is_your_goal_: TextView? = null
@@ -59,28 +60,30 @@ class configuraci_n_incial_1_activity : Activity() {
         btn_back.setOnClickListener {
             goToActivity(outcomming2_activity::class.java)
         }
+
         //Elección y Detección de los tipos
         val opcion_loss = findViewById<View>(R.id.btn_lose_w) as RelativeLayout
         opcion_loss.setOnClickListener {
-            is_pressed = true
-            var seleccionado = findViewById<View>(R.id.rectangle_5) as View
-            if (is_pressed) {
-
-                seleccionado.setBackgroundColor(focus_seleccionado)
-            } else {
-
-            }
+            DbUser.chooseGoal = 1
+            rectangle_5!!.setBackgroundColor(focus_seleccionado)
+            rectangle_6!!.setBackgroundColor(unfocus_seleccionado)
+            rectangle_7!!.setBackgroundColor(unfocus_seleccionado)
         }
-        is_pressed = false
+
         val opcion_gain = findViewById<View>(R.id.btn_gain_w) as RelativeLayout
         opcion_gain.setOnClickListener {
-            is_pressed = true
-            var seleccionado = findViewById<View>(R.id.rectangle_6) as View
-            if (is_pressed) {
-                seleccionado.setBackgroundColor(focus_seleccionado)
-            } else {
-                seleccionado.setBackgroundColor(unfocus_seleccionado)
-            }
+            DbUser.chooseGoal = 2
+            rectangle_5!!.setBackgroundColor(unfocus_seleccionado)
+            rectangle_6!!.setBackgroundColor(focus_seleccionado)
+            rectangle_7!!.setBackgroundColor(unfocus_seleccionado)
+        }
+
+        val opcion_stay = findViewById<View>(R.id.btn_stay_g) as RelativeLayout
+        opcion_stay.setOnClickListener {
+            DbUser.chooseGoal = 3
+            rectangle_5!!.setBackgroundColor(unfocus_seleccionado)
+            rectangle_6!!.setBackgroundColor(unfocus_seleccionado)
+            rectangle_7!!.setBackgroundColor(focus_seleccionado)
         }
     }
 

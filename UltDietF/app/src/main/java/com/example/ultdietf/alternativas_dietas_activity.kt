@@ -1,4 +1,3 @@
-
 package com.example.ultdietf
 
 import android.annotation.SuppressLint
@@ -7,6 +6,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.core.content.ContextCompat
+import com.example.ultdietf.db.DbDiet
 
 class alternativas_dietas_activity : Activity() {
     private var choose_yout_diet: TextView? = null
@@ -25,6 +27,7 @@ class alternativas_dietas_activity : Activity() {
     private var salad: ImageView? = null
     private var meat: ImageView? = null
     private var fish: ImageView? = null
+
     @SuppressLint("MissingInflatedId")
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,7 +49,17 @@ class alternativas_dietas_activity : Activity() {
         meat = findViewById<View>(R.id.meat) as ImageView
         fish = findViewById<View>(R.id.fish) as ImageView
 
+        // Get the list of diets depending the goal
+        val diet = DbDiet(0,"")
+        val dietsList = diet.selectDiets(this)
+        option_1!!.text = dietsList[0].toString()
+        option_2!!.text = dietsList[1].toString()
+        option_3!!.text = dietsList[2].toString()
 
-        //custom code goes here
+        // Choose a diet
+        val focus_seleccionado = ContextCompat.getColor(this, R.color.seleccionado_color)
+        val unfocus_seleccionado = ContextCompat.getColor(this, R.color.what_is_your_goal__color)
+
+
     }
 }

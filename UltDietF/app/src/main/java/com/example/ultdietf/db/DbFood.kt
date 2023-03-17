@@ -58,6 +58,6 @@ class DbFood(
         values.put("descripcion_comida", this.description)
         values.put("horario_comida", this.schedule)
 
-        return db.insert("t_usuario", null, values)
+        return db.insert("t_comida", null, values)
     }
 }
