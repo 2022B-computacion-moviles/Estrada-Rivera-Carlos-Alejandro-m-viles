@@ -6,7 +6,9 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.content.FileProvider
 import java.io.File
 
@@ -26,6 +28,9 @@ class perfil_activity : Activity() {
     private var whatsapp: ImageView? = null
     private var facebook: ImageView? = null
     private var instagram: ImageView? = null
+
+    //btn exit
+    private var btn_exit: RelativeLayout? = null
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.perfil)
@@ -65,6 +70,17 @@ class perfil_activity : Activity() {
         // Ir a actividad my_goals
         my_goals!!.setOnClickListener{
             goToActivity(my_goals_activity::class.java)
+        }
+
+        //cerrar sesión
+        btn_exit!!.setOnClickListener{
+            Toast.makeText(this, "Se ha cerrado la sesión", Toast.LENGTH_LONG).show()
+            goToActivity(outcomming2_activity::class.java)
+        }
+
+        // Regresar a dashboard
+        left_6!!.setOnClickListener{
+            goToActivity(dashboard_activity::class.java)
         }
     }
     fun goToActivity(
