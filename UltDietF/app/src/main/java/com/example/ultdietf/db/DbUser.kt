@@ -137,7 +137,8 @@ class DbUser(
 
         var userCursor: Cursor? = null
 
-        userCursor = db.rawQuery("SELECT email_usuario, password_usuario, id_dieta FROM t_usuario", null)
+        userCursor =
+            db.rawQuery("SELECT email_usuario, password_usuario, id_dieta FROM t_usuario", null)
 
         if (userCursor.moveToFirst()) {
             do {
@@ -153,21 +154,30 @@ class DbUser(
         return answerUserAndPassword
     }
 
-    fun getTargetWeightLogin(context: Context, email: String): String{
-        var targetWeightBD = ""
-        val dbHelper: DbHelper = DbHelper(context)
+    fun getUserByEmail(context: Context, email: String): DbUser {
+        val dbHelper = DbHelper(context)
         val db: SQLiteDatabase = dbHelper.writableDatabase
 
-        var userCursor: Cursor? = null
+        val user = DbUser(0, 0, "", "", "", "", "", "")
+        var cursor: Cursor? = null
 
-        userCursor = db.rawQuery("SELECT pesoobj_usuario FROM t_usuario WHERE email_usuario=${email}", null)
+        cursor = db.rawQuery("SELECT * FROM t_usuario WHERE email_usuario = '$email'", null)
 
-        if (userCursor.moveToFirst()) {
+        if (cursor.moveToFirst()) {
             do {
-                targetWeightBD = userCursor.getString(0)
-            } while (userCursor.moveToNext())
+                user.setidUser(cursor.getString(0).toInt())
+                user.setemail(cursor.getString(1))
+                user.setname(cursor.getString(2))
+                user.setpassword(cursor.getString(3))
+                user.setheight(cursor.getString(4))
+                user.setactualWeight(cursor.getString(5))
+                user.settargetWeight(cursor.getString(6))
+                user.setidDiet(cursor.getString(7).toInt())
+            } while (cursor.moveToNext())
         }
-        return targetWeightBD
+
+        cursor.close()
+        return user
     }
 
     fun updateUser(context: Context): Int {
@@ -213,16 +223,16 @@ class DbUser(
         return user
     }
 
-    fun setGoalAndDiet_login(diet: Int){
-        if(diet in 1 .. 3){
+    fun setGoalAndDiet_login(diet: Int) {
+        if (diet in 1..3) {
             DbUser.chooseGoal = 1
             DbUser.chooseDiet = diet
         }
-        if(diet in 4 .. 6){
+        if (diet in 4..6) {
             DbUser.chooseGoal = 2
             DbUser.chooseDiet = diet - 3
         }
-        if(diet in 7 .. 9){
+        if (diet in 7..9) {
             DbUser.chooseGoal = 3
             DbUser.chooseDiet = diet - 6
         }
