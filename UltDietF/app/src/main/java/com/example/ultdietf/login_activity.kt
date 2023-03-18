@@ -41,6 +41,8 @@ class login_activity : Activity() {
         login_ek3 = findViewById<View>(R.id.login_ek3) as TextView
         forgot_password_ = findViewById<View>(R.id.forgot_password_) as TextView
 
+        cleanEditText()
+
         //Back a outcomming
         val btn_back = findViewById<View>(R.id.left_1) as ImageView
         btn_back.setOnClickListener {
@@ -53,12 +55,22 @@ class login_activity : Activity() {
             val answer = userAux.verifyUserAndPassword(this, txt_email_l!!.text.toString(), txt_password_l!!.text.toString())
             if(answer){
                 Toast.makeText(this, "USER VERIFIED", Toast.LENGTH_LONG).show()
-                // Set DbUser.chooseGoal and DbUser.chooseDiet
+                // Set this value in my_goals_activity like (tv_tgWeight.text = DbUser.userAux.getTargetWeight())
+                DbUser.userAux.settargetWeight(userAux.getTargetWeightLogin(this, txt_email_l!!.text.toString()))
+
+                cleanEditText()
                 goToActivity(dashboard_activity::class.java)
             }else{
                 Toast.makeText(this, "WRONG USER OR PASSWORD" + txt_email_l!!.text.toString() + " " + txt_password_l!!.text.toString(), Toast.LENGTH_LONG).show()
             }
         }
+    }
+
+    fun cleanEditText(){
+        txt_email_l!!.setText("")
+        txt_password_l!!.setText("")
+        txt_email_l!!.hint = "email"
+        txt_password_l!!.hint = "password"
     }
 
     fun goToActivity(

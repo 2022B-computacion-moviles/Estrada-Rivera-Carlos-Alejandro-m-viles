@@ -30,7 +30,6 @@ class DbUser(
     companion object {
         var chooseGoal: Int = 0
         var chooseDiet: Int = 0
-        var idLastUser: Int = 0
         var userAux = DbUser(0, 0, "", "", "", "", "", "")
     }
 
@@ -152,6 +151,23 @@ class DbUser(
             } while (userCursor.moveToNext())
         }
         return answerUserAndPassword
+    }
+
+    fun getTargetWeightLogin(context: Context, email: String): String{
+        var targetWeightBD = ""
+        val dbHelper: DbHelper = DbHelper(context)
+        val db: SQLiteDatabase = dbHelper.writableDatabase
+
+        var userCursor: Cursor? = null
+
+        userCursor = db.rawQuery("SELECT pesoobj_usuario FROM t_usuario WHERE email_usuario=${email}", null)
+
+        if (userCursor.moveToFirst()) {
+            do {
+                targetWeightBD = userCursor.getString(0)
+            } while (userCursor.moveToNext())
+        }
+        return targetWeightBD
     }
 
     fun updateUser(context: Context): Int {
