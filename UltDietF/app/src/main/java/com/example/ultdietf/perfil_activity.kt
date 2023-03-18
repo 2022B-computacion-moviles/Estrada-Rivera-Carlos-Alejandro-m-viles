@@ -56,6 +56,8 @@ class perfil_activity : Activity() {
             startActivity(nextScreen)
         }
 
+        btn_exit = findViewById<RelativeLayout>(R.id.btn_salir) as RelativeLayout
+
 
         // Set username
         person_name!!.text = DbUser.userAux.getname()

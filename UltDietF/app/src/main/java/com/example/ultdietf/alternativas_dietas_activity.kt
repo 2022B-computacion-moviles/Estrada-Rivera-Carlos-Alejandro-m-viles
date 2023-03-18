@@ -46,7 +46,7 @@ class alternativas_dietas_activity : Activity() {
         option_1 = findViewById<View>(R.id.option_1) as TextView
         option_3 = findViewById<View>(R.id.option_3) as TextView
         option_2 = findViewById<View>(R.id.option_2) as TextView
-        //left_5 = findViewById<View>(R.id.left_5) as ImageView
+        left_5 = findViewById<View>(R.id.left_5) as ImageView
         diet = findViewById<View>(R.id.diet) as ImageView
         rectangle_19 = findViewById<View>(R.id.rectangle_19) as View
         skip = findViewById<View>(R.id.skip) as TextView
@@ -122,9 +122,9 @@ class alternativas_dietas_activity : Activity() {
             }
         }
         //go back
-        //left_5?.setOnClickListener{
+        left_5?.setOnClickListener{
           //  goToActivity(configuraci_n_incial_2_activity::class.java)
-        //}
+        }
     }
     fun goToActivity(
         clase: Class<*>
