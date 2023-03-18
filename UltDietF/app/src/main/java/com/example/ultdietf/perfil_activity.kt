@@ -47,7 +47,7 @@ class perfil_activity : Activity() {
             startActivity(nextScreen)
         }
 
-        
+
         //custom code goes here
     }
 }
