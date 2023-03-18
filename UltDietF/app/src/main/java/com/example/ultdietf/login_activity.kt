@@ -63,6 +63,7 @@ class login_activity : Activity() {
                 Toast.makeText(this, "USER VERIFIED", Toast.LENGTH_LONG).show()
                 // Set this value in my_goals_activity like (tv_tgWeight.text = DbUser.userAux.getTargetWeight())
                 DbUser.userAux.settargetWeight(userAux.getUserByEmail(this, txt_email_l!!.text.toString()).gettargetWeight())
+                DbUser.userAux.setname(userAux.getUserByEmail(this, txt_email_l!!.text.toString()).getname())
 
                 cleanEditText()
                 goToActivity(dashboard_activity::class.java)

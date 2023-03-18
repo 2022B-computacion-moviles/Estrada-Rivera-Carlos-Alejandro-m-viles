@@ -10,6 +10,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.FileProvider
+import com.example.ultdietf.db.DbUser
 import java.io.File
 
 class perfil_activity : Activity() {
@@ -56,7 +57,8 @@ class perfil_activity : Activity() {
         }
 
 
-        //custom code goes here
+        // Set username
+        person_name!!.text = DbUser.userAux.getname()
 
         //abrir libro de recetas
         val recetas = findViewById<TextView>(R.id.recipe_book) as TextView
