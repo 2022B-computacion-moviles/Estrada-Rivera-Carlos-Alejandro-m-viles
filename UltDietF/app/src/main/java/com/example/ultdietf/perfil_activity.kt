@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.FileProvider
+import java.io.File
 
 class perfil_activity : Activity() {
     private var _vince_veras_ajiqzdaud7a_unsplash_1: ImageView? = null
@@ -56,9 +58,7 @@ class perfil_activity : Activity() {
         recetas.setOnClickListener {
             val url = "https://cchealth.org/healthplan/pdf/recipes-Everyday-Healthy-Meals-Cookbook-es.pdf"
             val intent = Intent(Intent.ACTION_VIEW)
-            //intent.data = Uri.parse(url)
-            intent.setDataAndType(Uri.parse(url), "application/pdf")
-            intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+            intent.setData(Uri.parse(url))
             startActivity(intent)
         }
 
