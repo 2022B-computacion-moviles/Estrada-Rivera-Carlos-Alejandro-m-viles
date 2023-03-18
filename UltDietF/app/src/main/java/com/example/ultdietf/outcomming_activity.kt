@@ -66,8 +66,8 @@ class outcomming_activity : Activity() {
         // End insert diet
 
         // Insert User
-        val user1 = DbUser(1, 1,"alexanderguillin1999@gmail.com", "Alexander Guillin", "admin", "1.70", "60Kg", "55Kg")
-        val user2 = DbUser(2, 1,"carlos.estrada@epn.edu.ec", "Carlos Estrada", "admin", "1.72", "60Kg", "55Kg")
+        val user1 = DbUser(1, 1,"alexanderguillin1999@gmail.com", "Alexander Guillin", "admin", "1.70", "60", "55")
+        val user2 = DbUser(2, 1,"carlos.estrada@epn.edu.ec", "Carlos Estrada", "admin", "1.72", "60", "55")
         user1.insertUser(this)
         user2.insertUser(this)
         // End insert user
