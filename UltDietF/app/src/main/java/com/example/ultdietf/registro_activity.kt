@@ -27,6 +27,8 @@ class registro_activity : Activity() {
     private var rectangle_16: View? = null
     private var rectangle_17: View? = null
     private var sign_up: TextView? = null
+
+    //btn back
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.registro)
@@ -68,6 +70,9 @@ class registro_activity : Activity() {
                 txt_pwd_i!!.requestFocus()
             }
 
+        }
+        left_4!!.setOnClickListener{
+            goToActivity(configuraci_n_incial_2_activity::class.java)
         }
     }
 

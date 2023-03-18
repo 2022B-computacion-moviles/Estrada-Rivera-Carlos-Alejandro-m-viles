@@ -82,14 +82,6 @@
 				android:text="@string/option_2_string"
 				 />
 
-			<ImageView android:id="@+id/left_5"
-				android:src="@drawable/left_5"
-				android:contentDescription="left_5"
-				 android:layout_marginStart="17dp"
-				android:layout_marginTop="30dp"
-				android:layout_width="40dp"
-				android:layout_height="40dp" />
-
 			<ImageView android:id="@+id/diet"
 				android:src="@drawable/diet"
 				android:contentDescription="diet"
