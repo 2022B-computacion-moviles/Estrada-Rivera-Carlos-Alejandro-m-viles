@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.ultdietf.db.DbUser
 
 class my_goals_activity : Activity() {
     private var my_target_weight: TextView? = null
@@ -33,9 +34,7 @@ class my_goals_activity : Activity() {
         rectangle_23 = findViewById<View>(R.id.rectangle_23) as View
         save = findViewById<View>(R.id.save) as TextView
 
-
-        //custom code goes here
-
-
+        // Set target weight
+        _65_kg!!.text = DbUser.userAux.gettargetWeight() + " KG"
     }
 }
