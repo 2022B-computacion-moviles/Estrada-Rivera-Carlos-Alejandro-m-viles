@@ -9,7 +9,7 @@ import android.widget.TextView
 
 class perfil_activity : Activity() {
     private var _vince_veras_ajiqzdaud7a_unsplash_1: ImageView? = null
-    private var left_5: ImageView? = null
+    private var left_6: ImageView? = null
     private var rectangle_20: View? = null
     private var line_2: View? = null
     private var line_3: View? = null
@@ -28,7 +28,7 @@ class perfil_activity : Activity() {
         setContentView(R.layout.perfil)
         _vince_veras_ajiqzdaud7a_unsplash_1 =
             findViewById<View>(R.id._vince_veras_ajiqzdaud7a_unsplash_1) as ImageView
-        left_5 = findViewById<View>(R.id.left_5) as ImageView
+        left_6 = findViewById<View>(R.id.left_6) as ImageView
         rectangle_20 = findViewById<View>(R.id.rectangle_20) as View
         line_2 = findViewById<View>(R.id.line_2) as View
         line_3 = findViewById<View>(R.id.line_3) as View
@@ -47,7 +47,7 @@ class perfil_activity : Activity() {
             startActivity(nextScreen)
         }
 
-
+        
         //custom code goes here
     }
 }
