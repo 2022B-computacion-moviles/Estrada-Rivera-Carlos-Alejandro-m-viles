@@ -56,7 +56,9 @@ class perfil_activity : Activity() {
         recetas.setOnClickListener {
             val url = "https://cchealth.org/healthplan/pdf/recipes-Everyday-Healthy-Meals-Cookbook-es.pdf"
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
+            //intent.data = Uri.parse(url)
+            intent.setDataAndType(Uri.parse(url), "application/pdf")
+            intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
             startActivity(intent)
         }
 
