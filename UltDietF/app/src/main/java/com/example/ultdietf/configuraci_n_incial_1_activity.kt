@@ -28,6 +28,9 @@ class configuraci_n_incial_1_activity : Activity() {
     private var rectangle_8: View? = null
     private var siguiente: TextView? = null
     private var is_pressed = false
+
+    //Boton siguiente 1
+    private var btn_siguiente1: RelativeLayout? = null
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.configuraci_n_incial_1)
@@ -46,8 +49,16 @@ class configuraci_n_incial_1_activity : Activity() {
         rectangle_8 = findViewById(R.id.rectangle_8) as View
         siguiente = findViewById<View>(R.id.siguiente) as TextView
 
-        siguiente!!.setOnClickListener {
+        //btn siguiente
+        btn_siguiente1 = findViewById<RelativeLayout>(R.id.btn_siguiente1) as RelativeLayout
+
+        btn_siguiente1!!.setOnClickListener {
             goToActivity(configuraci_n_incial_2_activity::class.java)
+        }
+
+        // get back to start
+        left_2!!.setOnClickListener{
+            goToActivity(outcomming2_activity::class.java)
         }
 
         // Get the goal of the user with the companion object

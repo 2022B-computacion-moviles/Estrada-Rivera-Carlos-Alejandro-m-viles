@@ -24,6 +24,10 @@ class login_activity : Activity() {
     private var forgot_password_: TextView? = null
     private var txt_email_l: EditText? = null
     private var txt_password_l: EditText? = null
+
+    //Botón Ingreso
+    private var btn_ingreso: RelativeLayout? = null
+
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
@@ -41,6 +45,8 @@ class login_activity : Activity() {
         login_ek3 = findViewById<View>(R.id.login_ek3) as TextView
         forgot_password_ = findViewById<View>(R.id.forgot_password_) as TextView
 
+        //boton ingreso
+        btn_ingreso = findViewById<RelativeLayout>(R.id.btn_ingreso) as RelativeLayout
         cleanEditText()
 
         //Back a outcomming
@@ -51,7 +57,7 @@ class login_activity : Activity() {
 
         // Verify user and password
         val userAux = DbUser(0,0,"","","","","","")
-        login_ek3!!.setOnClickListener {
+        btn_ingreso!!.setOnClickListener {
             val answer = userAux.verifyUserAndPassword(this, txt_email_l!!.text.toString(), txt_password_l!!.text.toString())
             if(answer){
                 Toast.makeText(this, "USER VERIFIED", Toast.LENGTH_LONG).show()

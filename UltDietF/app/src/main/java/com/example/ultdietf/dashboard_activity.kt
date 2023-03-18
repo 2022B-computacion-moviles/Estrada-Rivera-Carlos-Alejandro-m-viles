@@ -28,8 +28,7 @@ class dashboard_activity : Activity() {
         setContentView(R.layout.dashboard)
         _bg__dashboard_ek2 = findViewById<View>(R.id._bg__dashboard_ek2) as View
         image_1 = findViewById<View>(R.id.image_1) as ImageView
-        btn_foto_perfil =
-            findViewById<View>(R.id.btn_foto_perfil) as ImageView
+        btn_foto_perfil = findViewById<ImageView>(R.id.btn_foto_perfil) as ImageView
         have_a_good_day_ = findViewById<View>(R.id.have_a_good_day_) as TextView
         my_meals = findViewById<View>(R.id.my_meals) as TextView
         star = findViewById<View>(R.id.star) as ImageView
@@ -49,7 +48,7 @@ class dashboard_activity : Activity() {
         dinner!!.setOnClickListener {
             Toast.makeText(this, arrayListFood[1].toString(), Toast.LENGTH_LONG).show()
         }
-        btn_foto_perfil?.setOnClickListener{
+        btn_foto_perfil!!.setOnClickListener{
             goToActivity(perfil_activity::class.java)
         }
     }
