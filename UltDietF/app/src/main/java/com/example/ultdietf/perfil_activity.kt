@@ -2,6 +2,7 @@ package com.example.ultdietf
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -49,5 +50,25 @@ class perfil_activity : Activity() {
 
 
         //custom code goes here
+
+        //abrir libro de recetas
+        val recetas = findViewById<TextView>(R.id.recipe_book) as TextView
+        recetas.setOnClickListener {
+            val url = "https://cchealth.org/healthplan/pdf/recipes-Everyday-Healthy-Meals-Cookbook-es.pdf"
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
+
+        // Ir a actividad my_goals
+        my_goals!!.setOnClickListener{
+            goToActivity(my_goals_activity::class.java)
+        }
+    }
+    fun goToActivity(
+        clase: Class<*>
+    ) {
+        val intent = Intent(this, clase)
+        startActivity(intent)
     }
 }
