@@ -49,7 +49,7 @@ class dashboard_activity : Activity() {
         dinner!!.setOnClickListener {
             Toast.makeText(this, arrayListFood[1].toString(), Toast.LENGTH_LONG).show()
         }
-        btn_foto_perfil!!.setOnClickListener{
+        btn_foto_perfil?.setOnClickListener{
             goToActivity(perfil_activity::class.java)
         }
     }
