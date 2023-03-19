@@ -14,3 +14,7 @@
 ![proyecto_mov5](https://user-images.githubusercontent.com/53130383/226146728-dddc45d4-1065-454a-ade1-f067bc3e87e5.png)
 
 ![proyecto_mov6](https://user-images.githubusercontent.com/53130383/226146729-7c07bde6-2b14-4344-91b1-a8256fc0fb5e.png)
+
+### Authors
+- Alexander Guillin
+- Carlos Estrada
