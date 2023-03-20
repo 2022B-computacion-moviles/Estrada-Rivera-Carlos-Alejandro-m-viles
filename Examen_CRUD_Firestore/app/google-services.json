@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "850809295748",
+    "project_id": "crud-playapp",
+    "storage_bucket": "crud-playapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850809295748:android:aab8b15079dcd22e5303d1",
+        "android_client_info": {
+          "package_name": "com.example.examen_crud_firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850809295748-dq903dom3sqemdufrh96tn7o3kcsdgqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0WKXlPpR_YeoBdf7jxZL_NzizkjRbZLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850809295748-dq903dom3sqemdufrh96tn7o3kcsdgqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
